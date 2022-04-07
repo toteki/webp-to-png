@@ -2,16 +2,16 @@ package main
 
 import (
 	"bytes"
-	"github.com/toteki/wiz"
-	"golang.org/x/image/webp"
 	"image/png"
 	"io/ioutil"
 	"os"
 	"strings"
+
+	"github.com/toteki/wiz"
+	"golang.org/x/image/webp"
 )
 
 func main() {
-	wiz.MkDir("./input")
 	wiz.MkDir("./output")
 	/////////////////////////////////
 	files, err := ioutil.ReadDir("./input")
